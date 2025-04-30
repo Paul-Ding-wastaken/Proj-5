@@ -1,34 +1,33 @@
 header {
-    background-color: #1e1e2f;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-  }
-  
-  header h1 {
-    font-size: 2rem;
-    margin: 0;
-  }
-  
-  header a {
-    text-decoration: none;
-  }
-  
-  header button {
-    background-color: #4f46e5;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin-left: 10px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-  }
-  
-  header button:hover {
-    background-color: #4338ca;
-  }
-  
+  background-color: #1e1e2f;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header button {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+header button:hover {
+  background-color: #4338ca;
+}

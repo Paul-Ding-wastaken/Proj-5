@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import './Detail.css'; // <-- add this import!
+import './Detail.css';
 import axios from 'axios';
 
 const API_KEY = import.meta.env.VITE_API_KEY;
@@ -13,18 +13,18 @@ function DetailView() {
     useEffect(() => {
         axios.get(`https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}`)
             .then((response) => setMovie(response.data))
-    
-            axios.get(`https://api.themoviedb.org/3/movie/${id}/videos?api_key=${API_KEY}`)
+
+        axios.get(`https://api.themoviedb.org/3/movie/${id}/videos?api_key=${API_KEY}`)
             .then((response) => {
-              const trailer = response.data.results.find(
-                video => video.type === "Trailer" && video.site === "YouTube"
-              );
-              if (trailer) {
-                setTrailerKey(trailer.key);
-              }
+                const trailer = response.data.results.find(
+                    video => video.type === "Trailer" && video.site === "YouTube"
+                );
+                if (trailer) {
+                    setTrailerKey(trailer.key);
+                }
             })
             .catch(error => {
-              console.error("Error fetching trailer:", error);
+                console.error("Error fetching trailer:", error);
             });
     }, [id]);
     console.log(movie)

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Sidebar.css';
 
-// Accept setGenre and refreshPage as props!
+
 function GenreSideBar({ setGenre, refreshPage }) {
 
     const genreMap = {
@@ -21,11 +21,11 @@ function GenreSideBar({ setGenre, refreshPage }) {
 
     function transferF(x) {
         const genreId = genreMap[x];
-        setGenre(genreId);   // <-- Correct spelling
+        setGenre(genreId);
         refreshPage();
     }
 
-    const genres = Object.keys(genreMap); // You don't need to hardcode the array, just get the keys
+    const genres = Object.keys(genreMap);
 
     return (
         <div className="sidebar">

@@ -6,7 +6,7 @@ import './Genres.css';
 import axios from 'axios';
 
 
-const API_KEY = import.meta.env.VITE_API_KEY; // Ensure this is set in your .env file
+const API_KEY = import.meta.env.VITE_API_KEY;
 
 function Genres() {
     const [curGenre, setGenre] = useState(28);
@@ -33,8 +33,7 @@ function Genres() {
 
     useEffect(() => {
         refreshPage();
-    }, [curPage, curGenre]);  // Refresh when either page or genre changes
-
+    }, [curPage, curGenre]);
 
     return (
         <>

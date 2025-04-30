@@ -13,12 +13,12 @@ function App() {
 
 
     <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Login" element={<Login />} />
-        <Route path="/Register" element={<Register />} />
-        <Route path="/Genres" element={<GenreView />} />
-        <Route path="/Details/:id" element={<DetailView />} />
-        <Route path="*" element={<Error />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/Login" element={<Login />} />
+      <Route path="/Register" element={<Register />} />
+      <Route path="/Genres" element={<GenreView />} />
+      <Route path="/Details/:id" element={<DetailView />} />
+      <Route path="*" element={<Error />} />
     </Routes>
 
   )

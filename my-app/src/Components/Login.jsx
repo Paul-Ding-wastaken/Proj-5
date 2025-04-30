@@ -5,7 +5,6 @@ function Login() {
 
     function handleLogin(event) {
         event.preventDefault();
-        // Handle login logic here
         const username = event.target.username;
         username.value = "That won't work.";
     }

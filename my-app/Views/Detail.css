@@ -5,7 +5,9 @@ body {
   background-color: #141414;
   color: #fff;
 }
-body, html {
+
+body,
+html {
   overflow-y: auto;
 }
 
@@ -27,7 +29,7 @@ body, html {
 .detail-header img {
   width: 300px;
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.7);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
 }
 
 .detail-header h1 {
@@ -46,7 +48,7 @@ body, html {
   background-color: #222;
   padding: 1rem 2rem;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
 .detail-info h2 {

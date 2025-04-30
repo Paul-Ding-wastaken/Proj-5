@@ -9,11 +9,9 @@ function Register() {
     const { logged, setLogged } = useContext(LoggedContext);
     const navigate = useNavigate();
     const submit = (event) => {
-        //add some validation and store
         event.preventDefault();
         setLogged(true);
         console.log(logged)
-        // Store the user data in local storage or a global state
 
 
         navigate('/Genres');

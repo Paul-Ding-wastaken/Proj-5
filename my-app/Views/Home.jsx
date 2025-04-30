@@ -4,6 +4,7 @@ import './Home.css';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import Header from '../src/Components/Header';
+import Footer from '../src/Components/Footer';
 
 const API_KEY = import.meta.env.VITE_API_KEY;
 
@@ -47,9 +48,10 @@ function Home() {
 
                 <section className="cta-section">
                     <p>Ready to dive in?</p>
-                    <Link to="/signup" className="cta-button">Join Us</Link>
+                    <Link to="/Register" className="cta-button">Join Us</Link>
                 </section>
             </div>
+            <Footer />
         </>
     );
 }
