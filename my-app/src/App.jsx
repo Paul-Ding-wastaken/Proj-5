@@ -6,6 +6,8 @@ import Register from '../Views/Register'
 import GenreView from '../Views/Genres'
 import DetailView from '../Views/Detail'
 import Error from '../Views/Error';
+import Search from '../Views/Search'
+import Cart from '../Views/Cart'
 
 function App() {
 
@@ -19,6 +21,8 @@ function App() {
       <Route path="/Genres" element={<GenreView />} />
       <Route path="/Details/:id" element={<DetailView />} />
       <Route path="*" element={<Error />} />
+      <Route path="/Search/:id" element={<Search />} />
+      <Route path="/Cart" element={<Cart />} />
     </Routes>
 
   )

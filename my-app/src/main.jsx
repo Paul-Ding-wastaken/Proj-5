@@ -4,6 +4,8 @@ import { BrowserRouter } from 'react-router-dom';
 import './index.css'
 import App from './App.jsx'
 import { LoggedProvider } from './Components/loggedContext';
+import { CartProvider } from './Components/cartContext';
+import { UserProvider } from './Components/userData.jsx';
 
 
 globalThis.Logged = false;
@@ -11,9 +13,13 @@ globalThis.Logged = false;
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <LoggedProvider>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
+      <CartProvider>
+        <BrowserRouter>
+          <UserProvider>
+            <App />
+          </UserProvider>
+        </BrowserRouter>
+      </CartProvider>
     </LoggedProvider>
   </StrictMode>,
 )

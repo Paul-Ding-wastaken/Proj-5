@@ -14,6 +14,7 @@
   background-color: #141414;
   /* Netflix dark background */
   color: white;
+  padding-top: 100px;
 }
 
 .sidebar {
@@ -21,6 +22,7 @@
   background-color: #1c1c1c;
   padding: 20px;
   box-sizing: border-box;
+  padding-top: 100px;
 }
 
 .sidebar h2 {
@@ -115,4 +117,12 @@ html {
 .content::-webkit-scrollbar {
   display: none;
   /* Chrome, Safari, Opera */
+}
+
+Header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 100;
 }

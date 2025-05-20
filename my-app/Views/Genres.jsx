@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import MovieBlock from '../src/Components/MovieBlock';
 import './Genres.css';
 import axios from 'axios';
-
+import Header from '../src/Components/Header';
 
 const API_KEY = import.meta.env.VITE_API_KEY;
 
@@ -37,6 +37,7 @@ function Genres() {
 
     return (
         <>
+            <Header />
             <div className="page-container">
                 <Sidebar setGenre={setGenre} refreshPage={() => refreshPage()} />
                 <div className="content">
